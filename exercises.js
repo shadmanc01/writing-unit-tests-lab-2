@@ -1,4 +1,4 @@
-function octalToDecimal() {
+function octalToDecimal(stringNum) {
   //Write code here
   let result = 0;
   let count = stringNum.length-1;
@@ -9,17 +9,17 @@ function octalToDecimal() {
   return result;
 }
 
-function anagram() {
+function anagram(word, arrOfWords) {
   //Write code here
   return arrOfWords.filter(el => el.split('').sort().join('') === word.split('').sort().join(''));
 }
 
-function triangle() {
+function triangle(a,b,c) {
   //Write code here
   return (a === b || b === c || a * b * c === 0) ? "invalid" :  (a===90 || b===90||c==90) ? "right" : a<=90 && b<=90 && c<=90 ? "acute" : a>=90 || b>=90||c>=90 ? "obtuse" : "what is a triangle";
 }
 
-function fridayThe13ths() {
+function fridayThe13ths(year) {
   //Write code here
   let count = 0;
   for (let i = 1; i <= 12; i++) {
